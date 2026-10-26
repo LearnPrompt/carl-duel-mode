@@ -1,0 +1,25 @@
+<section id="__ROOT_ID__" class="duel-surface" aria-label="决斗模式行动手牌">
+  <style>__STYLE__</style>
+  <header class="duel-header">
+    <div><p class="duel-round" data-role="round"></p><h2>你的回合</h2></div>
+    <div class="duel-sound">
+      <button type="button" class="duel-sound-button cursor-interaction" data-role="audio-toggle">开启声音</button>
+      <label class="duel-volume">音量 <input type="range" data-role="volume" min="0" max="100" step="1" aria-label="配乐与音效音量"></label>
+    </div>
+  </header>
+  <p class="duel-audio-state" data-role="audio-state" aria-live="polite"></p>
+  <div class="duel-arena">
+    <div class="duel-ring" aria-hidden="true"></div>
+    <div class="duel-hand" data-role="hand" role="group" aria-label="选择一张行动牌"></div>
+    <div class="duel-cast" aria-hidden="true">发动</div>
+  </div>
+  <div class="duel-footer">
+    <p data-role="status" class="duel-status" role="status" aria-live="polite">选择一张牌，继续下一步。</p>
+    <p class="duel-hint">划过抽牌看效果 · 点击发动 · 也可以直接输入回复</p>
+  </div>
+  <label class="duel-manual" data-role="manual" hidden>所选指令
+    <textarea data-role="selection-prompt" readonly rows="4" aria-label="可手动复制的所选指令"></textarea>
+  </label>
+  <script type="application/json" data-duel-data>__HAND_JSON__</script>
+  <script>__RUNTIME__</script>
+</section>
